@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo Updating and Installing Dependencies
+echo \
+sudo apt-get update
+sudo apt-get install libudev-dev libcurl4-openssl-dev
+
+echo \
+echo Configuring And Installing Cgminer
+echo \
+
+cd cgminer
+./autogen.sh
+./configure --enable-dualminer --enable-scrypt --disable-opencl  --prefix=/home/pi
+make && make install
+
+echo Done!
