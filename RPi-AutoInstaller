@@ -1,15 +1,17 @@
 #!/bin/bash
 
-echo Updating\ and\ Installing\ Dependencies
+echo "Updating And Installing Dependencies"
+echo \
 
 sudo apt-get update
-sudo apt-get install libudev-dev libcurl4-openssl-dev
+sudo apt-get install libudev-dev libcurl4-openssl-dev libtool m4 automake autoconf
 
-echo Configuring\ And\ Installing\ cgminer
+echo "Configuring And Installing cgminer"
+echo \
 
 cd cgminer
 ./autogen.sh
 ./configure --enable-dualminer --enable-scrypt --disable-opencl  --prefix=/home/pi/DualMiner-cgminer/cgminer
 make && make install
-
-tput setaf 6; echo Done!
+echo \
+tput setaf 6; echo "Done!"
