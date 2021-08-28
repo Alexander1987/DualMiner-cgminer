@@ -19,6 +19,6 @@ echo \
 
 echo "#!/bin/bash" >> $varsave
 echo "cd cgminer" >> $varsave
-echo "sudo ./cgminer --scrypt -o $varlink -u $varworker -p $varpass –T" >> $varsave
+echo "sudo ./cgminer --scrypt -o $varlink -u $varworker -p $varpass -T" >> $varsave
 
 chmod +x $varsave
