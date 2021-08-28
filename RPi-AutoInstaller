@@ -1,13 +1,12 @@
 #!/bin/bash
-echo  \
-tput setaf 6; echo Updating and Installing Dependencies
-echo  \
+
+echo Updating\ and\ Installing\ Dependencies
+
 sudo apt-get update
 sudo apt-get install libudev-dev libcurl4-openssl-dev
-echo  \
-echo  \
-tput setaf 6; echo Configuring And Installing Cgminer
-echo  \
+
+echo Configuring\ And\ Installing\ cgminer
+
 cd cgminer
 ./autogen.sh
 ./configure --enable-dualminer --enable-scrypt --disable-opencl  --prefix=/home/pi/DualMiner-cgminer/cgminer
