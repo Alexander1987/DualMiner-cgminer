@@ -11,31 +11,31 @@ Wait for the AutoInstaller to finish and then use the Worker Generator to make e
 
 	$ ./Worker-Generator
 
-First choose a name for the bash script to be saved as, no spaces allowed.
+First, choose a name for the bash script to be saved as, no spaces allowed.
 
 	  Save As:
 	  Exampe
 
-Second type/paste in chosen scrypt pool url.
+Second, Insert chosen scrypt pool url.
 
 	  Pool URL:
 	  stratum+tcp://us2.litecoinpool.org:3333
 
-Third type/paste in worker name for selected pool.
+Third, Insert worker name for selected pool.
 
 	  Pool Worker:
 	  Meap10.Test
 
-Forth type/paste in worker password.
+Forth, Insert worker password.
 
 	  Worker Password:
 	  x
 
-Once that's done run the script just made with a ./ infront of the name.
+Once that's done, run the script just made with a ./ infront of the name.
 
 	$ ./Example  
 
-If all is done well you should see something like this.
+If all is done well, you should see something like this.
 
 	  [2021-08-28 10:35:29] Started cgminer 3.5.0                    
 	  [2021-08-28 10:35:29] dualminer Detect LTC: Test Success at 1:5-i0: get 00050cdd, should: 00050cdd                    
