@@ -14,4 +14,4 @@ cd cgminer
 ./configure --enable-dualminer --enable-scrypt --disable-opencl  --prefix=/home/pi/DualMiner-cgminer/cgminer
 make && make install
 echo \
-tput setaf 6; echo "Done!"
+echo "Done!"
